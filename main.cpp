@@ -45,12 +45,22 @@ int main(){
 
             produtos.push_back(newProduct);
         break;
-        
+        case 2:
+            cout << "Lista de produtos: " << endl;
+            for(int i = 0; i < produtos.size(); i++){
+                cout << "Produto: " << produtos[i].nameProduct << endl;
+                cout << "Nome: " << produtos[i].nameProduct << endl;
+                cout << "Codigo: " << produtos[i].codeProduct << endl;
+                cout << "Preco: " << produtos[i].price << endl;
+                cout << "Quantidade: " << produtos[i].quantityProduct << endl;
+                cout << "-------------------------------------------------------" << endl;
+            }
+        break;
         default:
-            cout << "Opcao Invalida!" << endl;
+            cout << "Opcao Invalida!" <<  endl;
             break;
         }
-    } while (opcao != 4);
+    } while (opcao != 4);   
 
     return 0;
 }
